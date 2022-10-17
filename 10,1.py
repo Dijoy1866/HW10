@@ -11,12 +11,9 @@ A = [
     [5, 7, 2, 7, 5, 2, 1]
 ]
 
-for row in A:
-   print(row[0], end = '\n')
+for i in range(len(A)):
+    F, *centr, L = A[i]
 
-for row in A:
-   print(row[len(row) - 1], end='\n')
-
-
+    print(F, L)
 
 

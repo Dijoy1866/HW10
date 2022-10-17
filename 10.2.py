@@ -12,6 +12,6 @@ A = [[1, 6, 8, 5, 4, 0, 3],
 
     [5, 7, 2, 7, 5, 2, 1]]
 
-for i in range (len(A)):
-    if i%2 == 0:
-        print(A[i])
+for i, a in enumerate(A):
+
+    print(*[A[i][j] for j, b in enumerate(a) if j % 2 == 0 and A[0][j] > A[len(A)-1][j]])
